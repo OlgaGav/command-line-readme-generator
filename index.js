@@ -1,7 +1,8 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
+const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+// An array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -17,7 +18,16 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your email address: '
+        message: 'Enter your email address: ',
+        validate: function (email) {
+            valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+            if (valid) {
+                return true;
+            } else {
+                console.log(". Please enter a valid email")
+                return false;
+            }
+        }
     },
     {
         type: 'input',
@@ -73,7 +83,9 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    
+}
 
 // TODO: Create a function to initialize app
 function init() {}
