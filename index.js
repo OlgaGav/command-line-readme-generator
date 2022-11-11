@@ -84,7 +84,10 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
+    if (typeof(data) != String) {
+        data = JSON.stringify(data);
+    }
+    fs.writeFile(fileName, data, (error) => console.log(error));
 }
 
 // TODO: Create a function to initialize app
