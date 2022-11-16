@@ -16,7 +16,7 @@
   - [Credits](#credits)
   - [License](#license)
   - [Questions](#questions)
-  - [Contribution guidelines](#contribution%20guidelines)
+  - [Contribution](#contribution)
   - [Tests](#tests)
     
   ## Installation
@@ -25,7 +25,7 @@
   
   ## Usage
   
-  <br> 1. Download repo. <br> 2. Run: node index.js
+  <br> 1. Download repo. <br> 2. Run: node index.js <br> Video instructions: https://drive.google.com/file/d/1Bv9UkS-ofltpjN4GColi-P-RXNjeo6vg/view
   
   ## Credits
   
@@ -45,7 +45,7 @@
   
   If you have additional questions or proposals please email me: [ogavby+bb@gmail.com](mailto:ogavby+bb@gmail.com?subject=[GitHub]%20command-line%20password%20generator)
     
-  ## Contribution guidelines
+  ## Contribution
 
   Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated. <br>Fork the Project <br> - Create your Feature Branch <br> - Commit your Changes <br> - Push to the Branch <br> - Open a Pull Request
   
