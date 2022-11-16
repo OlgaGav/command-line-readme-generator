@@ -15,32 +15,13 @@ let promptUser = () => {
             },
             {
                 type: 'input',
-                name: 'username',
-                message: 'Enter your GitHub User Name: '
-            },
-            {
-                type: 'input',
-                name: 'email',
-                message: 'Enter your email address: ',
-                validate: function (email) {
-                    valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
-                    if (valid) {
-                        return true;
-                    } else {
-                        console.log(". Please enter a valid email")
-                        return false;
-                    }
-                }
-            },
-            {
-                type: 'input',
                 name: 'description',
-                message: 'Provide a short description explaining the what, why, and how of your project'
+                message: 'Provide a short description explaining the what, why, and how of your project: '
             },
             {
                 type: 'input',
                 name: 'screenshot',
-                message: 'Provide a relative path to screenshot of your application. It will be added to Description section'
+                message: 'Provide a relative path to screenshot of your application. It will be added to Description section: '
             },
             {
                 type: 'input',
@@ -74,8 +55,33 @@ let promptUser = () => {
             },
             {
                 type: 'input',
+                name: 'username',
+                message: 'Enter your GitHub User Name: '
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: 'Enter your email address: ',
+                validate: function (email) {
+                    // valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+                    valid = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+                    if (valid) {
+                        return true;
+                    } else {
+                        console.log(" - incorrect format. Please enter a valid email")
+                        return false;
+                    }
+                }
+            },
+            {
+                type: 'input',
                 name: 'credits',
-                message: 'For section Contributing list your collaborators, if any, with links to their GitHub profiles. If you followed tutorials, include links to those here as well: '
+                message: 'For section Credits list your collaborators, if any, with links to their GitHub profiles. If you followed tutorials, include links to those here as well: '
+            },
+            {
+                type: 'input',
+                name: 'contribution',
+                message: 'Add guidelines for contribution: ',
             },
             {
                 type: 'input',

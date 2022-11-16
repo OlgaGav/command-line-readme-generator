@@ -84,8 +84,8 @@ return `
   
   ${data.description}
 
-  ![this image show the shcreenshot of the application](${data.screenshot})
-  
+  ![this image display the screenshot of the '${data.project}' application](${data.screenshot})
+
   ## Table of Contents
  
   - [Installation](#installation)
@@ -93,8 +93,9 @@ return `
   - [Credits](#credits)
   - [License](#license)
   - [Questions](#questions)
+  - [Contribution guidelines](#contribution%20guidelines)
   - [Tests](#tests)
-  
+    
   ## Installation
   
   ${data.installation}
@@ -117,8 +118,12 @@ return `
   
   Link to my GitHub profile https://github.com/${data.username}/
   
-  If you have additional questions or proposals please email me: [${data.email}](mailto:${data.email})
+  If you have additional questions or proposals please email me: [${data.email}](mailto:${data.email}?subject=[GitHub]%20command-line%20password%20generator)
     
+  ## Contribution guidelines
+
+  ${data.contribution}
+  
   ## Tests
   
   ${data.tests}
