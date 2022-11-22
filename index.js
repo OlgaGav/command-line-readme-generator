@@ -110,7 +110,7 @@ let init = () => {
     promptUser()
     .then((responses) => {
         answers = JSON.stringify(responses);
-        writeToFile('README.md', answers)})
+        writeToFile('./dist/README.md', answers)})
     .then(() => console.log('Successfully wrote to README.md'))
     .catch((err) => console.log(err));
 }
