@@ -93,7 +93,7 @@ return `
   - [Credits](#credits)
   - [License](#license)
   - [Questions](#questions)
-  - [Contribution guidelines](#contribution%20guidelines)
+  - [Contribution](#contribution)
   - [Tests](#tests)
     
   ## Installation
@@ -120,7 +120,7 @@ return `
   
   If you have additional questions or proposals please email me: [${data.email}](mailto:${data.email}?subject=[GitHub]%20command-line%20password%20generator)
     
-  ## Contribution guidelines
+  ## Contribution
 
   ${data.contribution}
   
